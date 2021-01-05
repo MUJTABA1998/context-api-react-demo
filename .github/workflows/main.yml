@@ -26,10 +26,12 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: install node
-        uses: actions/setup-node@v2-beta
-      - name: Npm 
-        uses: JS-DevTools/npm-publish@v1
+      - name: Node
+        uses: actions/setup-node@v2-beat
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v2.3.0
+        with:
+          cmd: install
         
       # Production Version
       - name: Production version
