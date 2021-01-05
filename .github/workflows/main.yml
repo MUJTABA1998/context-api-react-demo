@@ -28,7 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: install node
         uses: actions/setup-node@v2-beta
-        
+      - name: Npm 
+        uses: JS-DevTools/npm-publish@v1
         
       # Production Version
       - name: Production version
