@@ -4,6 +4,8 @@ const c_reduser = (state, action) => {
             return state + 1
         case 'Decreament':
             return state - 1
+        default:
+            throw console.error("errror");
     }
 }
 
